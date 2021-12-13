@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #333;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.App {
+  background: #333;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 700px;
+  color: #ddd;
+}
+
+.container {
+  display: flex;
+}
+
+.reservation-container {
+  width: 20%;
+  border-right: 0.1rem solid rgba(88, 88, 88, 0.548);
+}
+
+.reservation-header {
+  padding: 10px 5px;
+  text-align: center;
+  background: #777;
+  font-size: 1.1rem;
+}
+
+.reservation-cards-container {
+  min-height: 8rem;
+}
+
+.reservation-card-container {
+  background: #222;
+  width: 100%;
+  padding: 10px;
+  margin: 6px anto;
+  box-sizing: border-box;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.reservation-card-container:hover {
+  cursor: pointer;
+}
+
+.input {
+  background: #888;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  background: #eee;
+  border: 0;
+  display: block;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+
+.reservation-input-container .input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px auto;
+}
+
+.reservation-input-container .button {
+  width: 60%;
+  padding: 6px 20px;
+  margin: 10px auto;
+}
+
+.customer-food-container {
+  width: 80%;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-food-container p {
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  background: inherit;
+}
+
+.customer-food-container .food::after {
+  content: ',';
+}
+
+
+.customer-food-card-container {
+  background: #555;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.171);
+  min-height: 5rem;
+}
+
+.customer-foods-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 35px;
+  width: 100%;
+  justify-content: space-between;
+  background: inherit;
+}
+
+.customer-food {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.customer-food .food:last-child::after {
+  content: '';
+}
+
+.customer-food-input-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.customer-food-input-container .input {
+  width: 5rem;
+  padding: 5px;
+}
+
+.customer-food-input-container .button {
+  width: 3rem;
+  padding: 3px 10px;
+}
